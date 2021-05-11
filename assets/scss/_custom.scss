@@ -1,0 +1,77 @@
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.intro {
+    .logo {
+        width: 250px;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .img-wrapper {
+        border-radius: 37% 63% 65% 35% / 58% 66% 34% 42%;
+        overflow: hidden;
+        background-color: $primary;
+
+        img {
+            filter: grayscale(1);
+            opacity: .6;
+        }
+    }
+}
+
+.container {
+    h2 {
+        margin-bottom: 1rem;
+        font-family: $font-secondary;
+        font-weight: bold;
+    }
+
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.nav-item {
+    .active {
+        a {
+            &:hover {
+                background-color: #666;
+                color: white;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-between("sm", "md") {
+    .skill-wrapper {
+        .skill-icon {
+            height: 33px;
+            width: 33px;
+        }
+        .skill-data .skill-title {
+            font-size: 1rem;
+        }
+
+        .skill-bar span::before {
+            display: none;
+        }
+    }
+}
+
+.contact {
+    .social {
+        margin-top: 5rem;
+        h3 {
+            margin-bottom: 1rem;
+        }
+        i {
+            font-size: 1.7rem;
+        }
+    }
+}
