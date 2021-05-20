@@ -28,7 +28,6 @@ footer {
         font-family: $font-secondary;
         font-weight: bold;
     }
-
 }
 
 .nav-link {
@@ -64,9 +63,16 @@ footer {
     }
 }
 
+@media (max-width: 992px) {
+    .editorial-grid { 
+        grid-template-columns: 1fr; 
+    }
+  }
+
 .contact {
     .social {
         margin-top: 5rem;
+        margin-bottom: 7rem;
         h3 {
             margin-bottom: 1rem;
         }
